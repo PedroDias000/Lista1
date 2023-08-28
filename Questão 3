@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    float Real;
+
+    // Lê o valor real
+    printf("Digite um valor real: ");
+    scanf("%f", &Real);
+
+    // Imprime o valor com uma casa decimal
+    printf("Valor com uma casa decimal: %.1f\n", Real);
+
+    return 0;
+}
