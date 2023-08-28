@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float Conta;
+
+    printf("Digite o valor da conta: ");
+    scanf("%f", &Conta);
+
+    float taxa = Conta * 0.10;
+    float valorTotal = Conta + taxa;
+
+    printf("Valor total a ser pago: %.2f\n", valorTotal);
+
+    return 0;
+}
