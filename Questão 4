@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &x);
+
+    int triplo = x * 3;
+    int quadrado = x * x;
+    float metade = (float)x / 2;
+
+    printf("Triplo: %d\n", triplo);
+    printf("Quadrado: %d\n", quadrado);
+    printf("Metade: %.2f\n", metade);
+
+    return 0;
+}
