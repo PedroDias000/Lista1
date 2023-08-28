@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    // Lê o valor inteiro decimal
+    printf("Digite um valor inteiro decimal: ");
+    scanf("%d", &x);
+
+    // Imprime o valor na base hexadecimal e octal
+    printf("Valor em hexadecimal: %X\n", x);
+    printf("Valor em octal: %o\n", x);
+
+    return 0;
+}
