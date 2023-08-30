@@ -1,1 +1,25 @@
-teste
+#include <stdio.h>
+
+int main(void) {
+  float valorHoraAula, horasTrabalhadas, porcentagemInss, SalarioBruto, SalarioLiquido;
+  
+  printf("Informe o valor de hora-aula: \n");
+  scanf("%f", &valorHoraAula);
+
+    printf("Informe o numero de horas trabalhadas: \n");
+  scanf("%f", &horasTrabalhadas);
+
+    printf("Informe o percentual de desconto do INSS: \n");
+  scanf("%f", &porcentagemInss);
+
+  SalarioBruto = horasTrabalhadas * valorHoraAula;
+  float descontoInss = (porcentagemInss / 1000) * SalarioBruto;
+
+  SalarioLiquido = SalarioBruto - descontoInss;
+
+  printf("o seu salario bruto foi: %f " ,SalarioBruto);
+  printf("o seu salario liquido é: %f " ,SalarioLiquido);
+
+  
+  return 0;
+}
