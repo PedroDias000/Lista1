@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+
+
+    int isPar = num & 1;  // Se num & 1 == 0, é par; caso contrário, é ímpar.
+
+    printf("O número é %s.\n", isPar ? "ímpar" : "par");
+
+    return 0;
+}
