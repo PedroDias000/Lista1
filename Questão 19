@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+void printShape(const char *shape) {
+    printf("%s\n", shape);
+}
+
+int main() {
+    const char rectangle[] = "********\n"
+                             "*      *\n"
+                             "*      *\n"
+                             "********\n";
+
+    const char ellipse[] = "      ***      \n"
+                           "   *       *   \n"
+                           " *           * \n"
+                           "*             *\n"
+                           " *           * \n"
+                           "   *       *   \n"
+                           "      ***      \n";
+
+    const char arrow[] = "   *   \n"
+                         "  ***  \n"
+                         " ***** \n"
+                         "   *   \n"
+                         "   *   \n"
+                         "   *   \n";
+
+    const char diamond[] = "   *   \n"
+                           "  ***  \n"
+                           " ***** \n"
+                           "*******\n"
+                           " ***** \n"
+                           "  ***  \n"
+                           "   *   \n";
+
+    printf("Retângulo:\n");
+    printShape(rectangle);
+
+    printf("\nElipse:\n");
+    printShape(ellipse);
+
+    printf("\nSeta:\n");
+    printShape(arrow);
+
+    printf("\nLosango:\n");
+    printShape(diamond);
+
+    return 0;
+}
