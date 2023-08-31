@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int numero, centenas, dezenas, unidades;
+
+    printf("Digite um número de 3 dígitos: ");
+    scanf("%d", &numero);
+
+    centenas = numero / 100;
+    dezenas = (numero / 10) % 10;
+    unidades = numero % 10;
+
+    int numeroReverso = unidades * 100 + dezenas * 10 + centenas;
+
+    printf("Número com os dígitos invertidos: %d\n", numeroReverso);
+
+    return 0;
+}
